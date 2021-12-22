@@ -19,3 +19,17 @@ const obj = {animal: 'cat'};
 Object.isSealed(obj) //false
 Object.seal(obj);
 Object.isSealed(obj) //true;
+
+
+/* 
+  метки для циклов для continue, break
+*/
+let n = 3;
+
+prime:
+for(let i = 0; i < n; i++){
+  for(let j = 0; j <= n; j++){
+    if(i===n) continue prime;
+  }
+}
+console.log(i) // 0, 1, 2
