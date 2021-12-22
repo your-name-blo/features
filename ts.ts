@@ -29,7 +29,7 @@ let n = 3;
 prime:
 for(let i = 0; i < n; i++){
   for(let j = 0; j <= n; j++){
-    if(i===n) continue prime;
+    if(i===j) continue prime;
   }
 }
 console.log(i) // 0, 1, 2
