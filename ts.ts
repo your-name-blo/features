@@ -33,3 +33,50 @@ for(let i = 0; i < n; i++){
   }
 }
 console.log(i) // 0, 1, 2
+
+
+/* ***
+[].sort()
+*** */
+/* desc в конце null */
+var numbers = [4, 2, null, 1, 3];
+numbers.sort(function(a, b) {
+  if (a === null) return 1
+   if( b === null) return -1
+  if (a > b) {
+    return -1;
+  }
+  if (a < b) {
+    return 1;
+  }
+  return 0;
+})
+console.log(numbers); // [4, 3, 2, 1, null]
+
+/* desc в начале null */
+var numbers = [4, 2, null, 1, 3];
+numbers.sort(function(a, b) {
+  if (a === null) return -1
+   if( b === null) return 1
+  if (a > b) {
+    return -1;
+  }
+  if (a < b) {
+    return 1;
+  }
+  return 0;
+})
+console.log(numbers); // [null, 4, 3, 2, 1]
+
+/* asc в начале null */
+var numbers = [4, 2, 1, 3];
+numbers.sort(function(a, b) {
+  if (a > b) {
+    return 1;
+  }
+  if (a < b) {
+    return -1;
+  }
+  return 0;
+})
+console.log(numbers); // [1, 2, 3, 4]
