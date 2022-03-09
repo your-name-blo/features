@@ -1,3 +1,6 @@
+// sleep
+await new Promise(resolve => setTimeout(resolve, 100000));
+
 /* *** Object.seal() и Object.preventExtensions() *** */
 /*
   Всем доброго дня! Недавно я делал вот этот пост (https://t.me/frontendnoteschannel/1637) на тему метода объектов .freeze, который по сути делает целевой объект неизменяемым.
