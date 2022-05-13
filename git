@@ -1,5 +1,6 @@
 # reset origin
 git reset --hard origin/master
+git reset --hard origin/release
 
 # check differents with origin branch
 git diff --cached --name-only
