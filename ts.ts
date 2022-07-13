@@ -83,3 +83,6 @@ numbers.sort(function(a, b) {
   return 0;
 })
 console.log(numbers); // [1, 2, 3, 4]
+
+// chrome text edition
+document.designMode = 'on';
