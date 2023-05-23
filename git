@@ -4,3 +4,6 @@ git reset --hard origin/release
 
 # check differents with origin branch
 git diff --cached --name-only
+
+# submodules update
+git submodule update --init --recursive
